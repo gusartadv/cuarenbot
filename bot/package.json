@@ -1,0 +1,35 @@
+{
+  "name": "chatbot_forms",
+  "version": "0.0.1",
+  "description": "Prueba de concepto para habilitar la creación de formularios dentro de un bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "set DEBUG=chatbot-forms:* && jest --coverage",
+    "start-dev": "set DEBUG=chatbot-forms:* && nodemon src/index.js",
+    "start": "set NODE_ENV=production && node src/index.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "author": "jheison.morales@telefonica.com",
+  "license": "MIT",
+  "dependencies": {
+    "@botbuildercommunity/adapter-twilio-whatsapp": "^1.1.0",
+    "axios": "^0.19.2",
+    "botbuilder": "^4.7.2",
+    "botbuilder-dialogs": "^4.7.2",
+    "dotenv": "^8.2.0",
+    "path": "^0.12.7",
+    "qs": "^6.9.1",
+    "readline": "^1.3.0",
+    "restify": "^8.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
